@@ -1,0 +1,306 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*ctrl z point */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+section{
+    padding: 100px 0;
+    background: #74b2df;
+}
+
+.section_title{
+    margin-bottom: 30px;
+}
+
+.section_title{
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    transition: all .5s ease-in-out;
+}
+
+
+/*HEADER*/
+
+header{
+    background: #004c82;
+    border-bottom: 3PX solid rgba(0, 0, 0, 0.678);
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    padding: 10px 0;
+}
+
+.nav_links{
+    display: flex;
+}
+
+
+.nav_links li a{
+    margin-left: 15px;
+    color: #ffffff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.nav_links li a:hover{
+    background: #74b2df;
+}
+
+.logo h2 a{
+    color: #ffffff;
+}
+
+/* ANASAYFA */
+.inner_anasayfa{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin: 0 auto;
+    width: 80%;
+    color: white;
+}
+
+.child_anasayfa{
+    flex-basis: 45%;
+}
+
+.child_anasayfa h1{
+    font-size: 50px;
+    color:#004c82 ;
+}
+.span_child{
+    color: #ce0000;
+}
+
+.child_anasayfa p{
+    font-size: 25px;
+    margin-bottom: 11px;
+}
+.btn{
+    background: #004c82;
+    padding: 12px 30px;
+    border-radius: 20px;
+    color: #ffffff;
+    border: 1px solid #004c82;
+    font-weight: 900;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.btn:hover{
+    background: transparent;
+}
+
+.fa-solid{
+   padding: 0 5px;
+}
+
+/*   Türler  */
+
+.innertür{
+    display: flex;
+    align-items:center;
+    width: 60%;
+    justify-content:space-between;
+    margin: 0 auto;
+}
+
+.innertür_child{
+    color: #000000;
+    padding: 25px 20px;
+    flex-basis: 49%;
+   background: rgba(51, 101, 166, 0.3);
+   border-radius: 30px;
+   border: 1px solid transparent;
+   transition: all .4s ease-in-out;
+   
+   
+}
+
+.innertür_child:hover{
+    border: 1px solid #004c82;
+}
+
+.innertür_child h3{
+    margin-left: 40px;
+    font-size: larger;
+}
+
+.innertür_child p{
+    margin-top: 10px;
+    font-size: large;
+}
+
+.innertür_child .btn{
+    margin-top: 0px;
+    margin-left: 190px;
+}
+
+/* 1.buton ve 2.buton arasında eşitsizlikler var innertür_child kısmı yukarısı */
+
+.innertür_child2{
+    color: #000000;
+    padding: 25px 20px;
+    flex-basis: 49%;
+   background: rgba(51, 101, 166, 0.3);
+   border-radius: 30px;
+   border: 1px solid transparent;
+   transition: all .4s ease-in-out;
+   
+   
+}
+
+.innertür_child2:hover{
+    border: 1px solid #004c82;
+}
+
+.innertür_child2 h3{
+    margin-left: 40px;
+    font-size: larger;
+}
+
+.innertür_child2 p{
+    margin-top: 10px;
+    font-size: large;
+}
+
+.innertür_child2 .btn{
+    margin-top: 0px;
+    margin-left: 190px;
+}
+
+/* Hakkımda */
+
+.inner_testi {
+    width: 100%;
+    margin: 0;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.child_testi {
+    flex-basis: 50%;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;/* Resim ve metinleri sütun yönde hizala ----> sorunu bu çözdü*/
+    align-items: center; /* dikeyde hizaladım*/
+}
+
+.child_testi img {
+    width: 300px; /* Resimlerin genişliğini istediğiniz piksel değerine ayarlayın */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.testi_img{
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex; /* Resim ve içerikleri birbirine hizalamak için flex özelliği */
+    justify-content: center; /* Yatayda hizalama için */
+    align-items: center; /* Dikeyde hizalama için */
+    vertical-align: middle; /* Dikeyde hizalama için */
+}
+
+.testi_img img{
+    border-radius: 50%;
+}
+
+.inner_testi a{
+    color: black;
+}
+
+/* İLETİŞİM */
+.inner_contact{
+    display: flex; /* Yan yana sıraladım */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.child_contact{
+    flex-basis: 50%;
+}
+
+.child_contact img {
+    width: 500px; /* Genişliği belirli bir piksel değeri olarak ayarlayın */
+    height: auto; /* Oranları korumak için height'i otomatik olarak ayarlayın */
+}
+
+.child_contact form{
+    padding: 50px 40px;
+    background: #004c82;
+    border-radius: 5px;
+}
+
+.child_contact form input,textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #ffffff;
+    border: none;
+    resize: none;
+    border-radius: 25px;
+    transition: .3s ease-in;
+}
+
+.child_contact form input,textarea:focus{
+    color: #000000;
+}
+
+.child_contact form input:focus{
+    letter-spacing: 1px;
+}
+
+.child_contact form textarea:focus{
+    letter-spacing: 1px;
+}
+
+.child_contact form input:last-child{
+    margin-bottom: 0;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    transition: .3s;
+}
+
+.child_contact form input:last-child:hover{
+    background: transparent;
+    color: #ffffff;
+}
+
+.section_title h2:hover{
+    background-color: #004c82;     /*iletişim kısmımdaki hoverın rengi*/
+    
+}
